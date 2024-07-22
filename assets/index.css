@@ -1,0 +1,116 @@
+@import url(./global.css);
+
+/* Wave */
+.main {
+    left: 0;
+    top: 0;
+    transform: translateX(-2%) translateY(-1%);
+    width: 103%;
+    min-height: 900px;
+    position: relative;
+    background-color: #fff;
+    color: #000;
+}
+.main::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 102%;
+    height: 40%;
+    background: url(./img/wave.png);
+}
+
+/* Nav bar */
+.navbar ul {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style-type: none;
+    margin: 0;
+    padding: 3px;
+    overflow: hidden;
+    border-style: solid;
+    border-color: #fff;
+    border-bottom-color: #000;
+}
+.navbar li {
+    float: left;
+}
+.navbar li a {
+    margin-top: 5px;
+    color: #000;
+    display: block;
+    text-align: center;
+    padding: 5px 8px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: #0000006c;
+}
+
+/* Profile */
+.profile {
+    text-align: center;
+}
+.pfp img{
+    margin-top: 20vh;
+    background-color: #d9d9d9;
+    width: 17vh;
+    border-radius: 50%;
+}
+
+/* Other */
+.more {
+    text-align: center;
+}
+#contact {
+    margin-bottom: 20vh;
+}
+.grid {
+    display: grid;
+    grid-template-areas:
+      "websites other";
+}
+/* Footer */
+.footer {
+    margin-top: 5vh;
+    text-align: center;
+}
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    .pfp img {
+        background-color: #373737;
+    }
+    .main {
+        background-color: #0c0c0c;
+        color: #fff
+    }
+    .navbar ul {
+        border-color: #0c0c0c;
+        border-bottom-color: #fff;
+    }
+    .navbar li a {
+        color: #fff;
+    }
+    .navbar a:hover {
+        color: #ffffff6c;
+    }
+}
+
+/* Screen fixes */
+@media (max-width:663px) {
+    .navbar li {
+        float: none;
+    }
+    .pfp img {
+        margin-top: 20vh;
+    }
+    .grid {
+        display: block;
+    }
+    .more {
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+}
