@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /src/
+Disallow: /assets/
+Allow: /
+Sitemap: https://d309044.eu/sitemap.xml
