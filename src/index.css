@@ -73,8 +73,14 @@ body{
 }
 .grid {
     display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10%;
     grid-template-areas:
       "websites other";
+    max-width: 800px; /* Adjust as necessary */
+    margin: 0 auto; /* Center the grid */
 }
 /* Footer */
 .footer {
