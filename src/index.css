@@ -1,4 +1,8 @@
 @import url(./global.css);
+body{
+    color: #fff;
+    background-color: #1c1c1c;
+}
 
 /* Wave */
 .main {
@@ -18,7 +22,7 @@
     left: 0;
     width: 102%;
     height: 40%;
-    background: url(./img/wave.png);
+    background: url(../assets/wave.png);
 }
 
 /* Nav bar */
