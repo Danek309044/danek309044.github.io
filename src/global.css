@@ -9,6 +9,23 @@ html {
     scroll-behavior: smooth
 }
 
+/* Links */
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #fff;
+        background-color: #1c1c1c;    
+    }
+    /* Links */
+        a, a:visited, a:active {
+            color: #fff;
+        }
+        a:hover {
+            color: #ffffffaf;
+        }
+}
+
 /* Scroll */
 ::-webkit-scrollbar {
     width: 5px;
@@ -24,12 +41,4 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     border-radius: 22px;
     background: #a8a8a873;
-}
-    
-/* Links */
-a, a:visited, a:active {
-    color: #fff;
-}
-a:hover {
-    color: #ffffffaf;
 }

@@ -110,6 +110,14 @@ body{
     }
 }
 
+/* Links */
+a, a:visited, a:active {
+    color: #fff;
+}
+a:hover {
+    color: #ffffffaf;
+}
+
 /* Screen fixes */
 @media (max-width:663px) {
     .navbar li {
