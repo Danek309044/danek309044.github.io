@@ -24,7 +24,9 @@ body{
     height: 40%;
     background: url(../assets/wave.png);
 }
-
+.main p {
+    margin: 0 5%;
+}
 /* Nav bar */
 .navbar ul {
     position: fixed;
